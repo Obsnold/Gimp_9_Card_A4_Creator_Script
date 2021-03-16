@@ -15,5 +15,8 @@ At the moment the image files used to make the pdf will be stored in ./temp/ the
 
 You can also reuse the same image in the list so if you want all the cards to have the same back just repeat that image 9 times in the list.
 
+If your cards are a different size to the templates used you may have to fiddle with the CARD_X/Y_OFFEST variables in the script.
+All values for width of the card and paper are given as pixels at 300ppi.
+
 example cards were taken from:
 https://www.fairway3games.com/free-poker-sized-card-templates/
