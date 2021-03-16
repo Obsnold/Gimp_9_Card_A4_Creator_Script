@@ -15,3 +15,5 @@ At the moment the image files used to make the pdf will be stored in ./temp/ the
 
 You can also reuse the same image in the list so if you want all the cards to have the same back just repeat that image 9 times in the list.
 
+example cards were taken from:
+https://www.fairway3games.com/free-poker-sized-card-templates/
