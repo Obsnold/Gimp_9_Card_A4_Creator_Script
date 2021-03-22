@@ -7,7 +7,7 @@ if [ "$#" -ne 1 ]; then
     exit 0
 fi
 
-IN_DIR="\"$1*\""
+IN_DIR="\"$(realpath $1)/*\""
 TEMP="temp/"
 
 FRONT_ORDER="$TEMP/front_1.png $TEMP/front_2.png $TEMP/front_3.png $TEMP/front_4.png $TEMP/front_5.png $TEMP/front_6.png $TEMP/front_7.png $TEMP/front_8.png $TEMP/front_9.png"
@@ -25,7 +25,9 @@ PIXEL_DENSITY=300
 rm -rf $TEMP
 mkdir $TEMP
 
+echo "input $IN_DIR"
 echo "Convert gimp files to png"
+
 gimp -i -b "
 (let*
   (
